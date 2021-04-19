@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<form action="/winners/new" method="POST">
+    <div class="row">
+        <div class="col">
+            <label for="Name">Name</label>
+            <input id="Name" type="text" class="form-control" placeholder="Please insert here the full name of the actor" name="Name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="Age">Age</label>
+            <input id="Age" type="text" class="form-control" placeholder="Please insert here the age of the actor when he received the oscar" name="Age">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="Movie">Movie</label>
+            <input id="Movie" type="text" class="form-control" placeholder="Please insert here the name of the movie in which the actor received the Oscar" name="Movie">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="Year">Year</label>
+            <input id="Year" type="text" class="form-control" placeholder="Please insert here the year the Oscar was received" name="Year">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label>Be sure you inserted all the data correctly</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit New Record</button>
+
+</form>
+
+{% endblock %}
